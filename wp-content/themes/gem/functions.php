@@ -6,7 +6,7 @@
  *
  * @package gem
  */
-require_once ('wp_bootstrap_navlist_walker.php');
+require_once('wp-bootstrap-navwalker.php');
 
 if ( ! function_exists( 'gem_setup' ) ) :
 /**
@@ -43,10 +43,10 @@ function gem_setup() {
 	 */
 	add_theme_support( 'post-thumbnails' );
 
-	// This theme uses wp_nav_menu() in one location.
-	register_nav_menus( array(
-		'menu-1' => esc_html__( 'Primary', 'gem' ),
-	) );
+//	// This theme uses wp_nav_menu() in one location.
+//	register_nav_menus( array(
+//		'menu-1' => esc_html__( 'Primary', 'gem' ),
+//	) );
 
 	/*
 	 * Switch default core markup for search form, comment form, and comments
@@ -72,12 +72,23 @@ function gem_setup() {
 endif;
 add_action( 'after_setup_theme', 'gem_setup' );
 
-function gem_theme_setup(){
-	register_nav_menus(array(
-		'primary' => __('Primary Menu')
-	));
+add_action( 'after_setup_theme', 'wpt_setup' );
+
+if ( ! function_exists( 'wpt_setup' ) ):
+	function wpt_setup() {
+		register_nav_menu( 'primary', __( 'Primary navigation', 'wptuts' ) );
+	} endif;
+
+function wpt_register_js() {
+	wp_register_script('jquery.bootstrap.min', get_template_directory_uri() . '/js/bootstrap.min.js', 'jquery');
+	wp_enqueue_script('jquery.bootstrap.min');
 }
-add_action('after_setup_theme', 'gem_theme_setup');
+add_action( 'init', 'wpt_register_js' );
+function wpt_register_css() {
+	wp_register_style( 'bootstrap.min', get_template_directory_uri() . '/css/bootstrap.min.css' );
+	wp_enqueue_style( 'bootstrap.min' );
+}
+add_action( 'wp_enqueue_scripts', 'wpt_register_css' );
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *
@@ -148,4 +159,4 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
-
+require_once ('wp-bootstrap-navwalker.php');

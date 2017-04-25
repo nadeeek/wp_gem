@@ -20,7 +20,7 @@
 					<div class="col-sm-12 col-md-4 col-lg-4">
 						<div class="section-a">
 							<div class="col-sm-5 col-md-3 col-lg-3">
-								<img src="img/footer-gem.png" alt="">
+								<img src="<?php echo(get_template_directory_uri());?>/img/footer-gem.png" alt="">
 							</div>
 							<div class="col-sm-7 col-md-9 col-lg-9 address">
 								<p class="com-name">Dhanaja (Pvt)Ltd. Jem Musium</p>
@@ -34,12 +34,12 @@
 						<div class="section-b">
 							<span class="com-name">Follow On Us</span>
 							<div class="social-icon">
-								<a href=""><img src="img/social-fb.png" alt=""></a>
-								<a href=""><img src="img/social-ln.png" alt=""></a>
-								<a href=""><img src="img/social-twitter.png" alt=""></a>
-								<a href=""><img src="img/social-gplus.png" alt=""></a>
-								<a href=""><img src="img/social-ytube.png" alt=""></a>
-								<a href=""><img src="img/social-plus.png" alt=""></a>
+								<a href=""><img src="<?php echo(get_template_directory_uri());?>/img/social-fb.png" alt=""></a>
+								<a href=""><img src="<?php echo(get_template_directory_uri());?>/img/social-ln.png" alt=""></a>
+								<a href=""><img src="<?php echo(get_template_directory_uri());?>/img/social-twitter.png" alt=""></a>
+								<a href=""><img src="<?php echo(get_template_directory_uri());?>/img/social-gplus.png" alt=""></a>
+								<a href=""><img src="<?php echo(get_template_directory_uri());?>/img/social-ytube.png" alt=""></a>
+								<a href=""><img src="<?php echo(get_template_directory_uri());?>/img/social-plus.png" alt=""></a>
 							</div>
 						</div>
 					</div>
