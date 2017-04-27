@@ -271,9 +271,9 @@ button,
 input,
 select,
 textarea {
-	color: #404040;
+	color: #8A8686;
 	font-size: 16px;
-	font-size: 1rem;
+	font-size: 13px;
 	line-height: 1.5;
 }
 
@@ -356,7 +356,8 @@ html {
 }
 
 body {
-	background: #fff; /* Fallback for when there is no custom background color defined. */
+	background: #0b1b3c;
+	margin: 110px 80px 150px;
 }
 
 blockquote:before,
@@ -496,13 +497,13 @@ a {
 }
 
 a:visited {
-	color: white;
+	color: #e19201;
 }
 
 a:hover,
 a:focus,
 a:active {
-	color: midnightblue;
+	color: white;
 }
 
 a:focus {
@@ -879,4 +880,31 @@ object {
 .gallery-caption {
 	display: block;
 }
+#content #main{
+	padding: 20px;
+	max-height: 390px;
+	overflow: auto;
+}
 
+@media
+only screen and (min-device-width: 320px) and (max-device-width: 640px) {
+	body {
+		margin: 110px 20px 150px;
+	}
+}
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+	body {
+		margin: 190px 20px 150px;
+	}
+	#content #main {
+		height: auto;
+		max-height: 700px;
+	}
+}
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+	#content #main {
+		max-height: 340px;
+	}
+}

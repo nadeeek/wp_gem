@@ -26,7 +26,7 @@
 								<p class="com-name">Dhanaja (Pvt)Ltd. Jem Musium</p>
 								<p>345/5, Isuru Pedesa, Paradise,</p>
 								<p>Kuruwita, Srilanka.</p>
-								<p>View On Google Map</p>
+								<p class="gmap">View On Google Map</p>
 							</div>
 						</div>
 					</div>
@@ -67,7 +67,11 @@
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
-<?php wp_footer(); ?>
+<?php //wp_footer(); ?>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<!--<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">-->
 
 </body>
 </html>

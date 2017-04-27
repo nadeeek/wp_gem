@@ -26,7 +26,7 @@ define('DB_NAME', 'dhanaja_gem');
 define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', '');
+define('DB_PASSWORD', 'kang1234@#');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');

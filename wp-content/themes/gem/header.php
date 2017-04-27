@@ -31,11 +31,11 @@
 			<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 				<div class="container">
 					<div class="row info">
-						<div class="col-md-3 visible-lg-inline-block visible-md-inline-block">
+						<div class="col-md-3 visible-lg-inline-block visible-md-inline-block visible-sm-inline-block">
 							<span>Hotline: +94 77 693 7555</span>
 							<span>Email: info@dhanaja.lk</span>
 						</div>
-						<div class="col-md-9 visible-lg-inline-block visible-md-inline-block header-right">
+						<div class="col-md-9 visible-lg-inline-block visible-md-inline-block visible-sm-inline-block header-right">
 							<span>Customer Testimonials</span>
 							<span>Videos</span>
 							<span>Special Offers</span>
@@ -54,7 +54,7 @@
 							<img src="<?php echo(get_template_directory_uri());?>/img/logo.png">
 						</a>
 					</div>
-					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
 						<?php /* Primary navigation */
 						wp_nav_menu( array(
 								'menu'       => 'primary',
@@ -64,7 +64,7 @@
 								'walker'     => new wp_bootstrap_navwalker())
 						);
 						?>
-						
+
 					</div>
 			</nav>
 

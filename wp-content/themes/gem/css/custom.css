@@ -92,13 +92,19 @@ span.com-name{
     font-size: 13px;
     color: #e19201;
     font-weight: bold;
-    text-align: center;
 }
 
 .address p {
     margin: 0 0 2px;
     font-size: 12px;
     color: #e19201;
+    text-align: left;
+
+}
+p.gmap{
+    margin: 10px 0 10px;
+    font-size: 13px;
+    color: white;
     text-align: left;
 
 }
@@ -111,6 +117,7 @@ span.com-name{
     width: 30px;
     height: auto;
     float: none;
+    margin: 10px 12px 0 0;
 }
 .footer-menu a{
     font-size: 10px;
@@ -119,14 +126,49 @@ span.com-name{
     display: inline-block;
     padding: 0 2px;
 }
+.footer .section-a img{
+    padding-top: 20px;
+
+}
+.section-b{
+    text-align: center;
+}
+.footer a:focus, a:hover {
+    text-decoration: none;
+}
+.copyright{
+    font-size: 10px;
+    font-weight: bold;
+    padding: 40px 0px 10px 0px;
+}
+.copyright span.yellow{
+    color: #c1c50e;
+}
+.copyright span.white{
+    color: white;
+}
 @media (min-width: 768px) {
     .navbar-nav {
-        float: left;
-        padding: 0px 0 0 100px;
+        float: right;
+        padding: 0 15px 0 0;
     }
     .navbar-nav > li {
         float: left;
         padding-right: 1px;
+    }
+    .nav > li > a {
+        padding: 10px 5px;
+        font-size: 10px;
+        font-weight: bold;
+    }
+    .footer .section-a img{
+        width: 60px;
+    }
+    .social-icon img {
+        width: 25px;
+    }
+    .copyright {
+        padding: 4px 0px 10px 0px;
     }
     .navbar-brand img{
         max-width: 143px;
@@ -141,12 +183,19 @@ only screen and (min-device-width: 320px) and (max-device-width: 640px) {
         max-width: 90px;
         margin-top: -5px;
     }
+    .navbar-inverse .navbar-nav > li > a {
+        padding-top: 0px;
+    }
+    .nav > li > a {
+        padding: 0px 22px;
+        font-size: 11px;
+    }
     .section-a,.section-b, .section-c{
         text-align: center;
         padding: 5px;
     }
     .section-a img{
-        width: 60px;
+        width: 40px;
         height: auto;
     }
     .social-icon img{
@@ -155,6 +204,12 @@ only screen and (min-device-width: 320px) and (max-device-width: 640px) {
     }
     .navbar.footer{
         padding-bottom: 10px;
+    }
+    .address p {
+        text-align: center;
+    }
+    .copyright {
+        padding: 10px 0px 10px 0px;
     }
 
 
@@ -179,11 +234,12 @@ only screen and (min-device-width: 320px) and (max-device-width: 640px) {
 /* iPads (portrait) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
     .navbar-brand img{
-        max-width: 90px;
+        max-width: 100px;
         margin-top: -5px;
+        margin-left: 65px;
     }
     img{
-        width: 70px;
+        width: 100px;
         height: auto;
         float: right;
     }
